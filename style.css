@@ -68,6 +68,7 @@ html, body {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 2rem;
 }
 
 /* Brand section (logo + name) */
