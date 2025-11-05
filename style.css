@@ -59,6 +59,7 @@ html, body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
   padding: 0.8rem 2rem;
+  white-space: nowrap;
 }
 
 /* Inner layout (brand + nav side by side) */
@@ -120,7 +121,9 @@ main {
   font-weight: 500;
   position: sticky;
   transition: var(--transition);
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  white-space: nowrap; 
+  display: inline-block;
 }
 
 .main-nav a:hover {
@@ -4923,119 +4926,6 @@ main {
   line-height: 1.6;
 }
 
-/* ===== Contact Us Page ===== */
-.contact-section {
-  margin-top: 100px;
-  padding: 2rem;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact-hero {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.contact-hero h1 {
-  font-size: 2.5rem;
-  color: var(--primary);
-}
-
-.contact-hero p {
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.contact-form, .contact-info {
-  flex: 1 1 45%;
-  background: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2, .contact-info h2 {
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
-
-.form-group {
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.form-group label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.form-group input, 
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  outline: none;
-}
-
-.form-group input:focus, 
-.form-group textarea:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 4px rgba(108, 99, 255, 0.4);
-}
-
-.btn-primary {
-  display: inline-block;
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-primary:hover {
-  background: var(--primary-dark);
-}
-
-.contact-info p {
-  margin: 0.5rem 0;
-  color: #333;
-}
-
-.contact-info i {
-  margin-right: 0.5rem;
-  color: var(--primary);
-}
-
-.social-links a {
-  color: var(--primary);
-  margin-right: 1rem;
-  font-size: 1.2rem;
-  transition: 0.3s;
-}
-
-.social-links a:hover {
-  color: var(--primary-dark);
-}
-
-.map-container {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 /* ===== FIX FOR ICON OVERLAPPING INPUT ===== */
 .input-wrapper {
   position: relative; /* positioning context for icon */
@@ -5077,5 +4967,70 @@ main {
 .input-wrapper input:focus + .input-icon {
   color: var(--primary);
 }
+
+/* === About Us Contact Info Styling === */
+.about-content p i {
+  color: var(--primary);
+  margin-right: 0.5rem;
+}
+.footer-links {
+  display: none;
+}
+
+.privacy-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.privacy-section h1 {
+  color: var(--primary, #5e1b8d);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.privacy-section h2 {
+  color: var(--primary-dark, #3a0b6a);
+  margin-top: 25px;
+}
+
+.privacy-section p {
+  color: #333;
+  text-align: justify;
+}
+/* === Unified Footer Section === */
+.site-footer {
+  background-color: #0b0d1a;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  border-top: 3px solid var(--primary-dark);
+}
+
+.site-footer a {
+  color: #a97cff;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+  color: var(--primary-light);
+}
+
+
+
+
+
+
+
+
+
 
 

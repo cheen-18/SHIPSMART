@@ -3090,3 +3090,6 @@ function setupAdminPage() {
 }
 
 console.log('ShipSmart script loaded successfully - Complete Enhanced Version');
+<footer class="site-footer">
+  <p>© 2025 ShipSmart. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+</footer>
